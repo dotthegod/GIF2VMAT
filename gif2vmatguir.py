@@ -236,7 +236,7 @@ def start_processing():
         messagebox.showerror(translations[current_language]["error"], translations[current_language]["duration_error"])
         return
 
-    if new_fps < 1 or new_fps >= original_fps:
+    if new_fps < 1 or new_fps > original_fps:
         messagebox.showerror(translations[current_language]["error"], translations[current_language]["fps_error"])
         return
 
